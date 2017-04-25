@@ -64,3 +64,10 @@ gapminder %>%
   filter(year < 1972) %>%
   group_by(continent, year) %>%
   summarize(mean(gdpPercap))
+
+
+subtractor <-  function(num1, num2) {
+  return(num1 - num2)
+}
+
+subtractor(3,1)
